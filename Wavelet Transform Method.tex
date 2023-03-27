@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\graphicspath{ {./image/} }
+
+\title{Regula-Falsi Method}
+\author{Dennis Mwendwa}
+\date{March 2023}
+
+\begin{document}
+\maketitle
+\section*{Regula-Falsi Method}
+Wavelet transforms are mathematical tools for analyzing data where features vary over different scales. For signals, features can be frequencies varying over time, transients, or slowly varying trends. For images, features include edges and textures.
+
+A Wavelet is a wave-like oscillation that is localized in time. 
+Wavelets have two basic properties: scale and location. Scale (or dilation) defines how “stretched” or “squished” a wavelet is. This property is related to frequency as defined for waves. Location defines where the wavelet is positioned in time (or space).
+
+The basic idea is to compute how much of a wavelet is in a signal for a particular scale and location. For those familiar with convolutions, that is exactly what this is. A signal is convolved with a set wavelets at a variety of scales.In other words, we pick a wavelet of a particular scale,  then, we slide this wavelet across the entire signal i.e. vary its location, where at each time step we multiply the wavelet and signal. The product of this multiplication gives us a coefficient for that wavelet scale at that time step. We then increase the wavelet scale 
+
+Wavelet transforms can be classified into two broad classes: the continuous wavelet transform (CWT) and the discrete wavelet transform (DWT).
+
+The continuous wavelet transform is a time-frequency transform, which is ideal for analysis of non-stationary signals. A signal being nonstationary means that its frequency-domain representation changes over time. The continuous wavelet transform can be used to analyze transient behavior, rapidly changing frequencies, and slowly varying behavior.
+
+With the discrete wavelet transform scales are discretized more coarsely than with CWT. This makes DWT useful for compressing and denoising signals and images while preserving important features. You can use discrete wavelet transforms to perform multiresolution analysis and split signals into physically meaningful and interpretable components.
+
+The wavelet transform is particularly useful for analyzing signals with non-stationary behavior, which cannot be analyzed using traditional Fourier transform methods. By decomposing a signal into wavelets, the wavelet transform can capture localized features of the signal at different scales and provide a more accurate representation of the signal than other methods.
+
+The wavelet transform is particularly useful for analyzing signals with non-stationary behavior, which cannot be analyzed using traditional Fourier transform methods. By decomposing a signal into wavelets, the wavelet transform can capture localized features of the signal at different scales and provide a more accurate representation of the signal than other methods.
+
+Wavelet transform is a powerful tool used in numerical analysis for a variety of applications, such as signal and image processing, data compression, and feature extraction. Here are some ways that wavelet transform can be used in numerical analysis:
+\begin{enumerate}
+
+\item \textbf{Signal processing:}  Wavelet transform can be used to analyze signals in time-frequency space, revealing the presence of specific features, such as transient events, oscillations, and noise. This allows for the identification of signal characteristics that would not be visible in a traditional Fourier transform analysis.
+
+\item \textbf{Image processing: } Wavelet transform can be used to compress images by removing high-frequency noise and details that are not important to the human visual system. This results in a smaller file size, while maintaining image quality. Wavelet transform is also used for feature extraction in image processing applications, such as object recognition and segmentation.
+
+\item \textbf{Data compression:}  Wavelet transform can be used to compress data by transforming it into a wavelet domain, where only the most important coefficients are retained. This results in a more efficient representation of the data, with reduced storage requirements.
+
+\item \textbf{Numerical integration:}  Wavelet transform can be used for numerical integration of functions, especially those with singularities or rapid oscillations. The wavelet basis functions provide a good approximation of the function, allowing for more accurate integration results.
+
+\item \textbf{Solving differential equations:}  Wavelet transform can be used to solve differential equations numerically, by transforming the differential equation into a wavelet domain. This can simplify the equations, making them easier to solve, and can also improve accuracy by capturing high-frequency details that may be missed by traditional numerical methods.
+\end{enumerate}
+Overall, wavelet transform is a powerful tool for numerical analysis, with a wide range of applications in various fields. Its ability to capture localized features and its flexibility in choosing basis functions make it a versatile and useful tool for many numerical analysis problems.
+
+
+
+\end{document}
