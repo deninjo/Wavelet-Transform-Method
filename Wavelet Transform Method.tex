@@ -25,12 +25,11 @@ With the discrete wavelet transform scales are discretized more coarsely than wi
 
 The wavelet transform is particularly useful for analyzing signals with non-stationary behavior, which cannot be analyzed using traditional Fourier transform methods. By decomposing a signal into wavelets, the wavelet transform can capture localized features of the signal at different scales and provide a more accurate representation of the signal than other methods.
 
-The wavelet transform is particularly useful for analyzing signals with non-stationary behavior, which cannot be analyzed using traditional Fourier transform methods. By decomposing a signal into wavelets, the wavelet transform can capture localized features of the signal at different scales and provide a more accurate representation of the signal than other methods.
 
 Wavelet transform is a powerful tool used in numerical analysis for a variety of applications, such as signal and image processing, data compression, and feature extraction. Here are some ways that wavelet transform can be used in numerical analysis:
 \begin{enumerate}
 
-\item \textbf{Signal processing:}  Wavelet transform can be used to analyze signals in time-frequency space, revealing the presence of specific features, such as transient events, oscillations, and noise. This allows for the identification of signal characteristics that would not be visible in a traditional Fourier transform analysis.
+\item \textbf{Signal processing:}  Wavelet transform can be used to analyze signals in time-frequency space, revealing the presence of specific features, such as transient events, oscillations, and noise. This allows for the identification of signal characteristics that would not be visible in a traditional Fourier transform analysis. Another application of the wavelet transform is in signal denoising, where the wavelet coefficients are thresholded to remove noise from the signal.
 
 \item \textbf{Image processing: } Wavelet transform can be used to compress images by removing high-frequency noise and details that are not important to the human visual system. This results in a smaller file size, while maintaining image quality. Wavelet transform is also used for feature extraction in image processing applications, such as object recognition and segmentation.
 
@@ -42,6 +41,15 @@ Wavelet transform is a powerful tool used in numerical analysis for a variety of
 \end{enumerate}
 Overall, wavelet transform is a powerful tool for numerical analysis, with a wide range of applications in various fields. Its ability to capture localized features and its flexibility in choosing basis functions make it a versatile and useful tool for many numerical analysis problems.
 
+\pagebreak
+
+\section*{Image processing - 2D image decomposition, compression, reconstruction}
+Wavelet analysis is used to divide information present on an image (signals) into two discrete components — approximations and details (sub-signals).
+
+A signal is passed through two filters, high pass and low pass filters. The image is then decomposed into high frequency (details) and low frequency components (approximation). At every level, we get 4 sub-signals. The approximation shows an overall trend of pixel values and the details as the horizontal, vertical and diagonal components.
+
+
+ \includegraphics[scale=0.45]{image}
 
 
 \end{document}
